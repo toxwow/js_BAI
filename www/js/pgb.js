@@ -20,3 +20,11 @@ function deviceInfo() {
 	navigator.notification.alert(info);
 	
 }
+
+function deviceInfo1() {
+
+	info1 =  'Tomasz Tom¿yñski'
+
+	navigator.notification.alert(info1);
+	
+}
