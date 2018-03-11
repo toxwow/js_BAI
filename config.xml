@@ -13,9 +13,10 @@
 	<platform name="android" >
 		
 	<preference name = "SplashScreen" value = "screen" />
+	<splash src="www/img/11.png" />
 	<preference name = "SplashScreenDelay" value = "3000" />
 	<preference name = "SplashMaintainAspectRatio" value = "true" />
-	<splash src="www/img/11.png" />
+
 	</platform>
 	
 	<plugin name="cordova-plugin-device" spec="2.0.1" />
