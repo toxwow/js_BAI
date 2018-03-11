@@ -10,14 +10,16 @@
 		John Brown
 	</author>
 	
-	<platform name="android" >
-	<preference name="SplashScreen" value="screen"/>
-	<preference name="AutoHideSplashScreen" value="true"/>
-	<preference name="SplashShowOnlyFirstTime" value="false"/>
-	<preference name="ShowSplashScreenSpinner" value="false"/>
-	<preference name="FadeSplashScreen" value="false"/>
-	<preference name="SplashScreenDelay" value="3000"/>
-	<splash src="www/img/11.png"/>
+	<feature name="SplashScreen">
+  <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+</feature>
+<preference name="ShowSplashScreen" value="true" />
+<preference name="SplashScreen" value="screen"/>
+<preference name="SplashScreenDelay" value="3000"/>
+<preference name="AutoHideSplashScreen" value="true" />
+<preference name="SplashShowOnlyFirstTime" value="false" />
+<preference name="FadeSplashScreen" value="false"/>
+	<splash src="www/img/splash.png"/>
 	</platform>
 	
 	<plugin name="cordova-plugin-device" spec="2.0.1" />
