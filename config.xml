@@ -10,12 +10,19 @@
 		John Brown
 	</author>
 	
+	<platform name="android" >
+		
+	<preference name = "SplashScreen" value = "screen" />
+	<preference name = "SplashScreenDelay" value = "3000" />
+	<preference name = "SplashMaintainAspectRatio" value = "true" />
+	</platform>
 	
 	<plugin name="cordova-plugin-device" spec="2.0.1" />
 	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
 	<plugin name="cordova-plugin-network-information" spec="2.0.1" />
-	<plugin name="cordova-plugin-device-motion" spec="2.0.0" />
-	<plugin name="cordova-plugin-splashscreen" spec="" />
-	<preference name = "SplashScreen" value = "screen" />
-	<preference name = "SplashScreenDelay" value = "3000" />
+	<plugin name="cordova-plugin-device-motion"  />
+	<plugin name="cordova-plugin-splashscreen"  />
+
+
+
 </widget>
