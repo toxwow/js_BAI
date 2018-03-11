@@ -3,8 +3,8 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
 		id          = "myfirstapp"
         version     = "1.0.0" >
-
-    <name>First app</name>
+	<icon src="www/img/icon.png" />
+    <name>Łed</name>
     <description>My first mobile app</description>
     <author href="http://mypersonalwebsite.com" email="johnbrown@gmail.com">
 		John Brown
