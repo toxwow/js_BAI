@@ -1,32 +1,11 @@
 function init() {
 	document.addEventListener("deviceready",onDeviceReady, false);
-    
 }
-
-
- function onDeviceReady() {
-
-           var options = new ContactFindOptions();
-           options.filter="";
-           options.multiple=true;
-           var fields = ["*"];
-          navigator.contacts.find(fields, onSuccess, onError, options);
-        }
-        //on success handler
-        function onSuccess(contacts)
-        {
-           for (var i = 0; i < contacts.length; i++)
-            {
-              $("#contactList").append("<li>"+contacts[i].phoneNumber[0].value+"</li>");
-              $("#contactList").listview("refresh");
-            }
-        }
-    //error handler
-        function onError()
-        {
-          alert("Some Error Occured");
-        }
-
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+	
+    console.log(navigator.contacts);
+}
 
 function deviceInfo() {
 
@@ -77,3 +56,10 @@ function onSuccess(acceleration) {
 function onError() {
     alert('onError!');
 }
+
+var options      = new ContactFindOptions();
+options.filter   = "Bob";
+options.multiple = true;
+options.desiredFields = [navigator.contacts.fieldType.id];
+options.hasPhoneNumber = true;
+var fields       = [navigator.contacts.fieldType.displayName, navigator.contacts.fieldType.name];
