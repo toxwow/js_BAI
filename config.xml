@@ -11,13 +11,23 @@
 	</author>
 	
 	<platform name="android" >
-		
-	<preference name = "SplashScreen" value = "screen" />
-	<preference name="AutoHideSplashScreen" value="false"/>
-	<preference name = "SplashScreenDelay" value = "3000" />
-	<preference name = "SplashMaintainAspectRatio" value = "true" />
-	<gap:splash src="www/img/11.png"/>
+	
+	<preference name="AutoHideSplashScreen" value="true" />
+ 	<preference name="SplashScreenDelay" value="3000" />
 
+	<splash src="res/hdpi/11png" density="land-hdpi"/>
+    <splash src="res/ldpi/11png" density="land-ldpi"/>
+    <splash src="res/mdpi/11png" density="land-mdpi"/>
+    <splash src="res/xhdpi/11.png" density="land-xhdpi"/>
+    <splash src="res/xxhdpi/11.png" density="land-xxhdpi"/>
+    <splash src="res/xxxhdpi/11.png" density="land-xxxhdpi"/>
+
+    <splash src="res/hdpi/11png" density="port-hdpi"/>
+    <splash src="res/ldpi/11png" density="port-ldpi"/>
+    <splash src="res/mdpi/11png" density="port-mdpi"/>
+    <splash src="res/xhdpi/11.png" density="port-xhdpi"/>
+    <splash src="res/xxhdpi/11.png" density="port-xxhdpi"/>
+    <splash src="res/xxxhdpi/11.png" density="port-xxxhdpi"/>
 	</platform>
 	
 	<plugin name="cordova-plugin-device" spec="2.0.1" />
