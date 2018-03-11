@@ -5,13 +5,7 @@ function init() {
 }
 
 
-function getContactList() {
-      var contactList = new ContactFindOptions();
-      contactList.filter="";
-      contactList.multiple=true;
-      var fields = ["*"];  //"*" will return all contact fields
-      navigator.contacts.find(fields,  getContactFields, contactList );
-  }
+
 
   function getContactFields(contacts) {
          for (var i=0; i<contacts.length; i++)
@@ -29,6 +23,13 @@ for (var j=0; j<contacts[i].phoneNumbers.length; j++) {
     }
 function onDeviceReady() {
 	document.addEventListener("deviceready", getContactList, false);
+    function getContactList() {
+      var contactList = new ContactFindOptions();
+      contactList.filter="";
+      contactList.multiple=true;
+      var fields = ["*"];  //"*" will return all contact fields
+      navigator.contacts.find(fields,  getContactFields, contactList );
+  }
 }
 
 function deviceInfo() {
