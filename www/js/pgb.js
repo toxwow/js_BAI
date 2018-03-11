@@ -1,7 +1,32 @@
 function init() {
 	document.addEventListener("deviceready",onDeviceReady, false);
+    document.addEventListener("deviceready", getContactList, false);
 }
 
+
+function getContactList() {
+      var contactList = new ContactFindOptions();
+      contactList.filter="";
+      contactList.multiple=true;
+      var fields = ["*"];  //"*" will return all contact fields
+      navigator.contacts.find(fields,  getContactFields, contactList );
+  }
+
+  function getContactFields(contacts) {
+         for (var i=0; i<contacts.length; i++)
+        {
+               alert(contacts.length);
+               alert("Name:" + contacts[i].displayName + "\n"+
+                         "Birthday:"+ contacts[i].birthday)
+                        
+for (var j=0; j<contacts[i].phoneNumbers.length; j++) {
+                               alert("Type: " + contacts[i].phoneNumbers[j].type + "\n" +
+                                         "Value: "  + contacts[i].phoneNumbers[j].value );
+                        }
+ 
+    
+ }  
+    }
 function onDeviceReady() {
 	navigator.notification.beep(1);
 }
