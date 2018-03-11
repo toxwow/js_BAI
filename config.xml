@@ -9,7 +9,7 @@
     <author href="http://mypersonalwebsite.com" email="johnbrown@gmail.com">
 		John Brown
 	</author>
-	
+	<platform name="android" >
 	<feature name="SplashScreen">
   <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
 </feature>
