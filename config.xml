@@ -11,9 +11,12 @@
 	</author>
 	
 	<platform name="android" >
-	
-	<preference name="AutoHideSplashScreen" value="true" />
- 	<preference name="SplashScreenDelay" value="3000" />
+	<preference name="SplashScreen" value="screen"/>
+<preference name="AutoHideSplashScreen" value="true"/>
+<preference name="SplashShowOnlyFirstTime" value="false"/>
+<preference name="ShowSplashScreenSpinner" value="false"/>
+<preference name="FadeSplashScreen" value="false"/>
+<preference name="SplashScreenDelay" value="3000"/>
 
 	<splash src="res/hdpi/11png" density="land-hdpi"/>
     <splash src="res/ldpi/11png" density="land-ldpi"/>
