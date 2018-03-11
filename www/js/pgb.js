@@ -1,6 +1,7 @@
 function init() {
 	document.addEventListener("deviceready",onDeviceReady, false);
     document.addEventListener("deviceready", getContactList, false);
+    
 }
 
 
@@ -16,8 +17,7 @@ function getContactList() {
          for (var i=0; i<contacts.length; i++)
         {
                alert(contacts.length);
-               alert("Name:" + contacts[i].displayName + "\n"+
-                         "Birthday:"+ contacts[i].birthday)
+               alert("Name:" + contacts[i].displayName);
                         
 for (var j=0; j<contacts[i].phoneNumbers.length; j++) {
                                alert("Type: " + contacts[i].phoneNumbers[j].type + "\n" +
@@ -28,7 +28,7 @@ for (var j=0; j<contacts[i].phoneNumbers.length; j++) {
  }  
     }
 function onDeviceReady() {
-	navigator.notification.beep(1);
+	document.addEventListener("deviceready", getContactList, false);
 }
 
 function deviceInfo() {
